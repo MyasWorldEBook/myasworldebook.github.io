@@ -3,11 +3,11 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
 @layer base {
   :root {
-    --background: 0 0% 98%;
+    --background: 0 0% 100%;
     --foreground: 222.2 84% 4.9%;
 
     --card: 0 0% 100%;
@@ -16,26 +16,26 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 190 100% 70%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 221 83% 53%;
+    --primary-foreground: 210 40% 98%;
 
-    --secondary: 220 14% 90%;
+    --secondary: 220 14% 96%;
     --secondary-foreground: 220 14% 15%;
 
-    --muted: 220 14% 95%;
+    --muted: 220 14% 96%;
     --muted-foreground: 220 14% 40%;
 
-    --accent: 220 14% 90%;
+    --accent: 220 14% 96%;
     --accent-foreground: 220 14% 15%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 220 14% 85%;
-    --input: 220 14% 85%;
-    --ring: 220 14% 70%;
+    --border: 220 14% 90%;
+    --input: 220 14% 90%;
+    --ring: 221 83% 53%;
 
-    --radius: 0.25rem;
+    --radius: 0.5rem;
   }
 }
 
@@ -44,13 +44,13 @@
     @apply border-border;
   }
   
+  html {
+    scroll-behavior: smooth;
+  }
+  
   body {
     @apply bg-background text-foreground antialiased;
-    font-family: 'Montserrat', sans-serif;
-  }
-
-  h1, h2, h3, h4, h5, h6 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Inter', sans-serif;
   }
   
   a {
@@ -58,17 +58,11 @@
   }
 }
 
-.hero-bg {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url('/lovable-uploads/d69a68df-a4a0-44e5-894e-a79e1acfbf7f.png');
-  background-size: cover;
-  background-position: center;
-  color: white;
+/* Simplified styles without backgrounds */
+.buy-button {
+  @apply bg-blue-600 hover:bg-blue-500 text-white font-medium py-3 px-8 rounded-full transition-all shadow-sm;
 }
 
 .testimonial-card {
-  @apply bg-white rounded-xl shadow-md p-6 my-4;
-}
-
-.buy-button {
-  @apply bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 px-8 rounded-full transition-all transform hover:scale-105 shadow-lg;
+  @apply bg-white rounded-xl shadow-sm p-6 my-4 border border-gray-100;
 }

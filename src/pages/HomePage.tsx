@@ -7,20 +7,22 @@ const HomePage = () => {
   return (
     <EbookLayout>
       {/* Hero Section */}
-      <section className="hero-bg py-20 md:py-32">
-        <div className="container mx-auto text-center px-4">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6">THE INTERNET HOE</h1>
-          <p className="text-xl md:text-2xl mb-8 max-w-2xl mx-auto">COMPLETE GUIDE</p>
-          <p className="mb-8 max-w-2xl mx-auto">Your comprehensive guide to thriving in the digital space and unlocking financial independence</p>
-          <div className="flex flex-col md:flex-row gap-4 justify-center">
+      <section className="py-20 md:py-32 bg-gradient-to-b from-white to-gray-50">
+        <div className="container mx-auto px-4 max-w-4xl text-center">
+          <h1 className="text-5xl md:text-7xl font-semibold mb-4 tracking-tight">THE INTERNET HOE</h1>
+          <p className="text-xl md:text-2xl mb-6 text-gray-600 font-light">Your complete guide to thriving online</p>
+          <p className="mb-12 text-gray-600 max-w-2xl mx-auto">
+            Learn strategies for building your digital presence, monetization techniques, and protecting your wellbeing in the online space.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link to="/ebook">
-              <button className="buy-button">
-                LEARN MORE
+              <button className="px-8 py-3 rounded-full bg-gray-900 text-white hover:bg-gray-800 transition-all text-sm">
+                Learn More
               </button>
             </Link>
             <a href="https://buy.stripe.com/6oE9Eg77PaAN3Is3cc" target="_blank" rel="noopener noreferrer">
-              <button className="buy-button">
-                BUY NOW
+              <button className="px-8 py-3 rounded-full bg-blue-600 text-white hover:bg-blue-500 transition-all text-sm">
+                Buy Now
               </button>
             </a>
           </div>
@@ -28,56 +30,53 @@ const HomePage = () => {
       </section>
 
       {/* About Section */}
-      <section className="py-16">
-        <div className="container mx-auto px-4">
-          <div className="flex flex-col md:flex-row items-center">
-            <div className="md:w-1/2 mb-8 md:mb-0">
-              <img 
-                src="/lovable-uploads/943e0858-77e5-431f-b2e1-558be3b06cf8.png" 
-                alt="The Internet Hoe Author" 
-                className="rounded-full w-64 h-64 object-cover mx-auto"
-              />
-            </div>
-            <div className="md:w-1/2">
-              <h2 className="text-3xl font-bold mb-4">About The Guide</h2>
-              <p className="mb-4">
+      <section className="py-24 bg-white">
+        <div className="container mx-auto px-4 max-w-6xl">
+          <div className="flex flex-col md:flex-row items-center gap-12">
+            <div className="md:w-1/2 text-center md:text-left">
+              <h2 className="text-3xl font-semibold mb-6">Unlock Your Digital Potential</h2>
+              <p className="text-gray-600 mb-6 text-lg">
                 The Internet Hoe is your comprehensive guide to navigating the digital landscape
-                of adult entertainment and online entrepreneurship. Based on real experiences and practical advice,
-                this ebook will help you unlock your potential for financial independence.
+                of adult entertainment and online entrepreneurship.
               </p>
-              <p className="mb-6">
-                Learn how to embrace your seductive power, reclaim your narrative, 
-                and build a sustainable income from the comfort of your home.
+              <p className="text-gray-600 mb-10">
+                Based on real experiences and practical advice, this guide will help you unlock 
+                your potential for financial independence while protecting your wellbeing.
               </p>
               <a href="https://buy.stripe.com/6oE9Eg77PaAN3Is3cc" target="_blank" rel="noopener noreferrer">
-                <button className="buy-button">
-                  GET YOUR COPY
+                <button className="px-8 py-3 rounded-full bg-blue-600 text-white hover:bg-blue-500 transition-all text-sm">
+                  Get Your Copy
                 </button>
               </a>
+            </div>
+            <div className="md:w-1/2">
+              <img 
+                src="/lovable-uploads/d69a68df-a4a0-44e5-894e-a79e1acfbf7f.png" 
+                alt="The Internet Hoe Cover" 
+                className="rounded-lg shadow-lg max-w-sm mx-auto" 
+              />
             </div>
           </div>
         </div>
       </section>
 
-      {/* Featured Testimonials */}
-      <section className="py-16 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-8 text-center">What Readers Say</h2>
+      {/* Featured Testimonial */}
+      <section className="py-24 bg-gray-50">
+        <div className="container mx-auto px-4 max-w-4xl text-center">
+          <h2 className="text-3xl font-semibold mb-12">What Readers Say</h2>
           
-          <div className="testimonial-card">
-            <p className="italic mb-4">
+          <div className="bg-white p-10 rounded-xl shadow-sm mb-10 max-w-2xl mx-auto">
+            <p className="text-xl mb-6 text-gray-600">
               "This guide changed my perspective on how to build an online presence. I've doubled my income within just 3 months of implementing these strategies!"
             </p>
-            <p className="font-bold">— Jessica T.</p>
+            <p className="font-medium">Jessica T.</p>
           </div>
           
-          <div className="text-center mt-8">
-            <Link to="/testimonials">
-              <button className="px-6 py-2 bg-gray-200 hover:bg-gray-300 rounded-full">
-                SEE ALL TESTIMONIALS
-              </button>
-            </Link>
-          </div>
+          <Link to="/testimonials">
+            <button className="px-6 py-2 border border-gray-300 rounded-full hover:bg-gray-100 text-sm">
+              See All Testimonials
+            </button>
+          </Link>
         </div>
       </section>
     </EbookLayout>
