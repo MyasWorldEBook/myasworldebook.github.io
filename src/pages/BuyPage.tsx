@@ -7,7 +7,7 @@ import { Card, CardContent } from '../components/ui/card';
 const BuyPage = () => {
   return (
     <EbookLayout>
-      <div className="py-24 min-h-[80vh] bg-gradient-to-b from-white to-gray-50 flex flex-col items-center">
+      <div className="py-24 min-h-[80vh] bg-gradient-to-b from-white to-purple-50 flex flex-col items-center">
         <div className="container mx-auto px-4 max-w-3xl">
           <div className="text-center mb-12">
             <h1 className="text-4xl font-bold mb-6">THE INTERNET HOE</h1>
@@ -15,7 +15,7 @@ const BuyPage = () => {
           </div>
 
           <Card className="border border-gray-200 shadow-lg overflow-hidden mb-12">
-            <div className="bg-primary text-white p-6 text-center">
+            <div className="bg-gradient-to-r from-purple-700 to-pink-700 text-white p-6 text-center">
               <h2 className="text-2xl font-bold mb-1">Complete E-Book</h2>
               <p className="opacity-90">One-time purchase, lifetime access</p>
             </div>
@@ -28,19 +28,19 @@ const BuyPage = () => {
               
               <ul className="space-y-4 mb-8">
                 <li className="flex items-center">
-                  <div className="mr-3 w-5 h-5 rounded-full bg-primary flex items-center justify-center text-white text-xs">✓</div>
+                  <div className="mr-3 w-5 h-5 rounded-full bg-pink-700 flex items-center justify-center text-white text-xs">✓</div>
                   <span>Comprehensive 31-page guide</span>
                 </li>
                 <li className="flex items-center">
-                  <div className="mr-3 w-5 h-5 rounded-full bg-primary flex items-center justify-center text-white text-xs">✓</div>
+                  <div className="mr-3 w-5 h-5 rounded-full bg-pink-700 flex items-center justify-center text-white text-xs">✓</div>
                   <span>Proven strategies for content creation</span>
                 </li>
                 <li className="flex items-center">
-                  <div className="mr-3 w-5 h-5 rounded-full bg-primary flex items-center justify-center text-white text-xs">✓</div>
+                  <div className="mr-3 w-5 h-5 rounded-full bg-pink-700 flex items-center justify-center text-white text-xs">✓</div>
                   <span>Marketing techniques for growing your audience</span>
                 </li>
                 <li className="flex items-center">
-                  <div className="mr-3 w-5 h-5 rounded-full bg-primary flex items-center justify-center text-white text-xs">✓</div>
+                  <div className="mr-3 w-5 h-5 rounded-full bg-pink-700 flex items-center justify-center text-white text-xs">✓</div>
                   <span>Bonus resources and templates</span>
                 </li>
               </ul>
@@ -55,7 +55,7 @@ const BuyPage = () => {
               </div>
               
               <a href="https://buy.stripe.com/6oE9Eg77PaAN3Is3cc" target="_blank" rel="noopener noreferrer" className="w-full block">
-                <Button className="w-full bg-primary hover:bg-primary/90 text-lg py-6">
+                <Button className="w-full bg-gradient-to-r from-purple-700 to-pink-700 hover:from-purple-600 hover:to-pink-600 text-lg py-6">
                   Buy Now
                 </Button>
               </a>

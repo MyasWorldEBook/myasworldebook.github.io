@@ -2,6 +2,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import EbookLayout from '../components/EbookLayout';
+import Testimonials from '../components/Testimonials';
 
 const HomePage = () => {
   return (
@@ -21,7 +22,7 @@ const HomePage = () => {
               </button>
             </Link>
             <Link to="/buy">
-              <button className="px-8 py-3 rounded-full bg-primary text-white hover:bg-primary/90 transition-all text-sm">
+              <button className="px-8 py-3 rounded-full bg-pink-700 text-white hover:bg-pink-600 transition-all text-sm">
                 Buy Now
               </button>
             </Link>
@@ -60,23 +61,18 @@ const HomePage = () => {
         </div>
       </section>
 
-      {/* Featured Testimonial */}
-      <section className="py-24 bg-gray-50">
-        <div className="container mx-auto px-4 max-w-4xl text-center">
-          <h2 className="text-3xl font-semibold mb-12">What Readers Say</h2>
+      {/* Testimonials Section */}
+      <section className="py-24 bg-gradient-to-r from-purple-50 to-pink-50">
+        <div className="container mx-auto px-4 max-w-5xl">
+          <Testimonials />
           
-          <div className="bg-white p-10 rounded-xl shadow-sm mb-10 max-w-2xl mx-auto">
-            <p className="text-xl mb-6 text-gray-600">
-              "This guide changed my perspective on how to build an online presence. I've doubled my income within just 3 months of implementing these strategies!"
-            </p>
-            <p className="font-medium">Jessica T.</p>
+          <div className="text-center mt-12">
+            <Link to="/testimonials">
+              <button className="px-6 py-2 border border-gray-300 rounded-full hover:bg-gray-100 text-sm">
+                See All Testimonials
+              </button>
+            </Link>
           </div>
-          
-          <Link to="/testimonials">
-            <button className="px-6 py-2 border border-gray-300 rounded-full hover:bg-gray-100 text-sm">
-              See All Testimonials
-            </button>
-          </Link>
         </div>
       </section>
     </EbookLayout>

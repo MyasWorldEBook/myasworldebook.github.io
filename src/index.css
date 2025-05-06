@@ -18,7 +18,7 @@
 
     --primary: 270 50% 25%; /* Dark purple */
     --primary-foreground: 0 0% 100%; /* White */
-
+    
     --secondary: 220 14% 96%;
     --secondary-foreground: 220 14% 15%;
 
@@ -66,3 +66,13 @@
 .testimonial-card {
   @apply bg-white rounded-xl shadow-sm p-6 my-4 border border-gray-100;
 }
+
+/* New color classes */
+.text-pink {
+  @apply text-pink-700;
+}
+
+.bg-pink-gradient {
+  @apply bg-gradient-to-r from-purple-700 to-pink-700;
+}
+

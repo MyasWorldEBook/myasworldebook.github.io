@@ -6,33 +6,51 @@ const TestimonialsPage = () => {
   const testimonials = [
     {
       id: 1,
-      text: "I was struggling to make ends meet before I found this guide. The strategies for content creation and audience building have completely changed my financial situation.",
-      name: "Alexis M.",
+      text: "This guide taught me how to monetize my personality while setting healthy boundaries. I've earned enough to pay off my student loans in just 6 months!",
+      name: "MistressVixen",
       rating: 5
     },
     {
       id: 2,
-      text: "The section on building your personal brand was worth the price of the whole guide. I've been able to stand out in a crowded market and attract higher-paying subscribers.",
-      name: "Taylor R.",
+      text: "The section on building your personal brand was *chef's kiss*. I went from amateur to having a waiting list of clients who respect my boundaries and pay premium rates.",
+      name: "DominantDiva",
       rating: 5
     },
     {
       id: 3,
-      text: "As someone new to the industry, I was overwhelmed with where to start. This guide gave me a clear roadmap and helped me avoid costly mistakes.",
-      name: "Jamie K.",
+      text: "As someone new to the industry, I was overwhelmed with where to start. This guide gave me the confidence to assert my worth and the tools to protect my identity online.",
+      name: "KinkyKitten",
       rating: 5
     },
     {
       id: 4,
-      text: "The safety and privacy section alone is worth every penny. I feel much more confident about protecting myself while growing my business online.",
-      name: "Morgan P.",
+      text: "The safety protocols alone saved me from countless headaches. Now I run my side hustle with complete confidence while keeping my personal life separate.",
+      name: "PleasurePrincess",
+      rating: 5
+    },
+    {
+      id: 5,
+      text: "I've tripled my income since implementing these strategies. The content creation schedule templates are worth every penny!",
+      name: "WhipMistress",
+      rating: 5
+    },
+    {
+      id: 6,
+      text: "Learning how to price my services based on value rather than time has been revolutionary. This guide gave me the confidence to charge what I'm worth.",
+      name: "LeatherLady",
+      rating: 5
+    },
+    {
+      id: 7,
+      text: "The section on navigating difficult conversations with subscribers was exactly what I needed. Now I can maintain healthy boundaries without losing clients.",
+      name: "SassyDomme",
       rating: 5
     }
   ];
 
   return (
     <EbookLayout>
-      <div className="py-24 bg-gradient-to-b from-white to-gray-50">
+      <div className="py-24 bg-gradient-to-b from-white to-purple-50">
         <div className="container mx-auto px-4 max-w-4xl">
           <div className="text-center mb-16">
             <h1 className="text-4xl font-semibold mb-4">Customer Testimonials</h1>
@@ -44,10 +62,10 @@ const TestimonialsPage = () => {
           
           <div className="space-y-6">
             {testimonials.map((testimonial) => (
-              <div key={testimonial.id} className="bg-white p-8 rounded-xl shadow-sm border border-gray-100">
+              <div key={testimonial.id} className="bg-white p-8 rounded-xl shadow-sm border border-purple-100">
                 <p className="text-gray-600 mb-6 text-lg">"{testimonial.text}"</p>
                 <div className="flex items-center justify-between">
-                  <p className="font-medium">{testimonial.name}</p>
+                  <p className="font-medium text-pink-700">{testimonial.name}</p>
                   <div className="text-yellow-400">
                     {"★".repeat(testimonial.rating)}
                   </div>
@@ -59,7 +77,7 @@ const TestimonialsPage = () => {
           <div className="text-center mt-16">
             <p className="text-xl mb-6">Ready to transform your online presence?</p>
             <a href="https://buy.stripe.com/6oE9Eg77PaAN3Is3cc" target="_blank" rel="noopener noreferrer">
-              <button className="px-8 py-3.5 rounded-full bg-blue-600 text-white hover:bg-blue-500 transition-all text-sm font-medium">
+              <button className="px-8 py-3.5 rounded-full bg-gradient-to-r from-purple-700 to-pink-700 text-white hover:from-purple-600 hover:to-pink-600 transition-all text-sm font-medium">
                 Get Your Copy Today
               </button>
             </a>
