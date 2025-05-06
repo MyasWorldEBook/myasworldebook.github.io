@@ -3,6 +3,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;500;600&display=swap');
+
 @layer base {
   :root {
     --background: 0 0% 98%;
@@ -14,8 +16,8 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 220 14% 15%;
-    --primary-foreground: 0 0% 98%;
+    --primary: 190 100% 70%;
+    --primary-foreground: 222.2 47.4% 11.2%;
 
     --secondary: 220 14% 90%;
     --secondary-foreground: 220 14% 15%;
@@ -43,18 +45,30 @@
   }
   
   body {
-    @apply bg-background text-foreground antialiased font-mono;
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Montserrat', sans-serif;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    @apply font-mono tracking-tight;
+    font-family: 'Playfair Display', serif;
   }
   
   a {
     @apply hover:underline;
   }
-  
-  .archive-item {
-    @apply transition-all duration-200 hover:shadow-md;
-  }
+}
+
+.hero-bg {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url('/lovable-uploads/d69a68df-a4a0-44e5-894e-a79e1acfbf7f.png');
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.testimonial-card {
+  @apply bg-white rounded-xl shadow-md p-6 my-4;
+}
+
+.buy-button {
+  @apply bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 px-8 rounded-full transition-all transform hover:scale-105 shadow-lg;
 }
