@@ -1,6 +1,7 @@
 
 import React from 'react';
 import EbookLayout from '../components/EbookLayout';
+import { Link } from 'react-router-dom';
 
 const EbookPage = () => {
   return (
@@ -32,19 +33,19 @@ const EbookPage = () => {
                 <h3 className="text-lg font-medium mb-4">What You'll Learn</h3>
                 <ul className="space-y-2 text-gray-600">
                   <li className="flex items-start">
-                    <span className="mr-2 text-blue-600">•</span>
+                    <span className="mr-2 text-primary">•</span>
                     How to build an engaged online audience
                   </li>
                   <li className="flex items-start">
-                    <span className="mr-2 text-blue-600">•</span>
+                    <span className="mr-2 text-primary">•</span>
                     Strategies for monetizing different platforms
                   </li>
                   <li className="flex items-start">
-                    <span className="mr-2 text-blue-600">•</span>
+                    <span className="mr-2 text-primary">•</span>
                     Safety and privacy protection techniques
                   </li>
                   <li className="flex items-start">
-                    <span className="mr-2 text-blue-600">•</span>
+                    <span className="mr-2 text-primary">•</span>
                     Financial management for content creators
                   </li>
                 </ul>
@@ -54,16 +55,16 @@ const EbookPage = () => {
                 <p className="font-medium mb-2">Ebook Details</p>
                 <div className="space-y-1 text-sm text-gray-600">
                   <p>Format: PDF (digital download)</p>
-                  <p>Pages: 120+</p>
+                  <p>Pages: 31</p>
                   <p>Includes: Bonus resources and templates</p>
                 </div>
               </div>
               
-              <a href="https://buy.stripe.com/6oE9Eg77PaAN3Is3cc" target="_blank" rel="noopener noreferrer">
-                <button className="w-full md:w-auto px-8 py-3.5 rounded-full bg-blue-600 text-white hover:bg-blue-500 transition-all text-sm font-medium">
-                  Buy Now — $19.99
+              <Link to="/buy" className="inline-block">
+                <button className="w-full md:w-auto px-8 py-3.5 rounded-full bg-primary text-white hover:bg-primary/90 transition-all text-sm font-medium">
+                  Learn More
                 </button>
-              </a>
+              </Link>
             </div>
           </div>
         </div>

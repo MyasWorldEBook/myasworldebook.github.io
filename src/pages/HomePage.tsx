@@ -20,11 +20,11 @@ const HomePage = () => {
                 Learn More
               </button>
             </Link>
-            <a href="https://buy.stripe.com/6oE9Eg77PaAN3Is3cc" target="_blank" rel="noopener noreferrer">
-              <button className="px-8 py-3 rounded-full bg-blue-600 text-white hover:bg-blue-500 transition-all text-sm">
+            <Link to="/buy">
+              <button className="px-8 py-3 rounded-full bg-primary text-white hover:bg-primary/90 transition-all text-sm">
                 Buy Now
               </button>
-            </a>
+            </Link>
           </div>
         </div>
       </section>
@@ -43,11 +43,11 @@ const HomePage = () => {
                 Based on real experiences and practical advice, this guide will help you unlock 
                 your potential for financial independence while protecting your wellbeing.
               </p>
-              <a href="https://buy.stripe.com/6oE9Eg77PaAN3Is3cc" target="_blank" rel="noopener noreferrer">
-                <button className="px-8 py-3 rounded-full bg-blue-600 text-white hover:bg-blue-500 transition-all text-sm">
+              <Link to="/buy">
+                <button className="px-8 py-3 rounded-full bg-primary text-white hover:bg-primary/90 transition-all text-sm">
                   Get Your Copy
                 </button>
-              </a>
+              </Link>
             </div>
             <div className="md:w-1/2">
               <img 

@@ -23,8 +23,7 @@ export default {
     },
     extend: {
       fontFamily: {
-        sans: ['Montserrat', 'sans-serif'],
-        display: ['Playfair Display', 'serif'],
+        sans: ['Inter', 'sans-serif'],
       },
       colors: {
         border: 'hsl(var(--border))',
@@ -60,12 +59,12 @@ export default {
           DEFAULT: 'hsl(var(--card))',
           foreground: 'hsl(var(--card-foreground))'
         },
-        blue: {
-          50: '#E6F6FA',
-          100: '#CCE6F2',
-          500: '#5CCCED',
-          600: '#33B9E3',
-        },
+        purple: {
+          100: '#f3f1fc',
+          500: '#9b87f5',
+          700: '#6E59A5',
+          900: '#1A1F2C',
+        }
       },
       borderRadius: {
         lg: 'var(--radius)',

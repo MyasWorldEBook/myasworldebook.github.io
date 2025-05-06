@@ -12,9 +12,9 @@ const Navigation = () => {
         <div className="flex justify-between items-center">
           <Link to="/" className="text-xl font-medium no-underline">
             <img 
-              src="/lovable-uploads/df906440-d231-47be-89a4-65242c5c47de.png" 
+              src="/lovable-uploads/a05f34f5-6f88-4373-a567-1fd03e128a97.png" 
               alt="Mya's World Logo" 
-              className="h-8" 
+              className="h-16 rounded-full" 
             />
           </Link>
           
@@ -22,6 +22,7 @@ const Navigation = () => {
           <div className="hidden md:flex space-x-8">
             <Link to="/" className="no-underline text-sm font-normal text-gray-600 hover:text-gray-900">Home</Link>
             <Link to="/ebook" className="no-underline text-sm font-normal text-gray-600 hover:text-gray-900">The Ebook</Link>
+            <Link to="/buy" className="no-underline text-sm font-normal text-gray-600 hover:text-gray-900">Buy Now</Link>
             <Link to="/testimonials" className="no-underline text-sm font-normal text-gray-600 hover:text-gray-900">Testimonials</Link>
           </div>
           
@@ -50,6 +51,13 @@ const Navigation = () => {
               onClick={() => setMobileMenuOpen(false)}
             >
               The Ebook
+            </Link>
+            <Link 
+              to="/buy" 
+              className="block no-underline text-sm font-normal text-gray-600 hover:text-gray-900"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Buy Now
             </Link>
             <Link 
               to="/testimonials" 

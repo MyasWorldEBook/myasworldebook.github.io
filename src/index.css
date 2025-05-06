@@ -16,8 +16,8 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 221 83% 53%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 270 50% 25%; /* Dark purple */
+    --primary-foreground: 0 0% 100%; /* White */
 
     --secondary: 220 14% 96%;
     --secondary-foreground: 220 14% 15%;
@@ -33,7 +33,7 @@
 
     --border: 220 14% 90%;
     --input: 220 14% 90%;
-    --ring: 221 83% 53%;
+    --ring: 270 50% 25%; /* Dark purple */
 
     --radius: 0.5rem;
   }
@@ -58,9 +58,9 @@
   }
 }
 
-/* Simplified styles without backgrounds */
+/* Simplified styles with updated colors */
 .buy-button {
-  @apply bg-blue-600 hover:bg-blue-500 text-white font-medium py-3 px-8 rounded-full transition-all shadow-sm;
+  @apply bg-primary hover:bg-primary/90 text-white font-medium py-3 px-8 rounded-full transition-all shadow-sm;
 }
 
 .testimonial-card {
